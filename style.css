@@ -12,9 +12,15 @@ body {
   font-family: Arial, sans-serif;
 }
 
+
+/* -------------------- */
+/* WERBUNG */
+/* -------------------- */
+
 .werbung-links {
   left: 25px;
 }
+
 .werbung-rechts {
   right: 25px;
 }
@@ -31,13 +37,20 @@ body {
   z-index: 10;
 }
 
+
+/* -------------------- */
+/* ÜBERSCHRIFTEN */
+/* -------------------- */
+
 h1 {
   color: #921212;
   font-family: "Super Waffles", sans-serif;
   font-size: 2rem;
   -webkit-text-stroke: 1px #f3eded;
+
   margin-top: 2.5%;
   margin-left: 35%;
+  margin-right: 20%;
 }
 
 h2 {
@@ -45,14 +58,21 @@ h2 {
   font-family: "Super Waffles", sans-serif;
   font-size: 4rem;
   -webkit-text-stroke: 1px #f3eded;
+
   margin-top: 2.5%;
   margin-left: 20%;
 }
+
+
+/* -------------------- */
+/* SUCHFELD */
+/* -------------------- */
 
 .suchfeld {
   color: #921212;
   font-family: "Super Waffles", sans-serif;
   font-size: 1.5rem;
+
   margin-top: 5%;
   margin-left: 30%;
   margin-right: 30%;
@@ -60,29 +80,43 @@ h2 {
 
 input[type="search"] {
   width: 100%;
+  box-sizing: border-box;
+
   padding: 10px;
   font-size: 1rem;
+
   border: 5px solid #921212;
   border-radius: 20px;
+
   background-color: #5a5959;
+}
+
+
+/* -------------------- */
+/* ERGEBNISKARTEN */
+/* -------------------- */
+
+#cards {
+  width: 50%;
+  margin: 0 auto;
 }
 
 .card {
   background-color: #5a5959;
   border: 5px solid #921212;
   border-radius: 20px;
+
   overflow: hidden;
 
   margin-top: 5%;
   margin-bottom: 30px;
-  margin-right: 25%;
 
   width: 100%;
+  box-sizing: border-box;
 }
 
 .card-bild {
-  width: 90%;
-  max-width: 90%;
+  width: 100%;
   height: 500px;
 
   display: flex;
@@ -90,19 +124,10 @@ input[type="search"] {
   align-items: center;
 }
 
-.error {
-  color: #921212;
-  font-family: "Super Waffles", sans-serif;
-  font-size: 1.5rem;
-  margin-top: 10%;
-  margin-left: 25%;
-  -webkit-text-stroke: 0.5px #f3eded;
-
-}
-
 .card-bild img {
   max-width: 90%;
   max-height: 90%;
+
   object-fit: contain;
 }
 
@@ -113,14 +138,136 @@ input[type="search"] {
 }
 
 .card-info h2 {
-  margin-top: 0;
+  margin: 0 0 15px 0;
 
   color: #921212;
   font-family: "Super Waffles", sans-serif;
+
+  font-size: 3rem;
 
   -webkit-text-stroke: 0.5px #f3eded;
 }
 
 .card-info p {
   margin: 8px 0;
+}
+
+
+/* -------------------- */
+/* FEHLERMELDUNG */
+/* -------------------- */
+
+.error {
+  color: #921212;
+  font-family: "Super Waffles", sans-serif;
+  font-size: 1.5rem;
+
+  margin-top: 10%;
+
+  text-align: center;
+
+  -webkit-text-stroke: 0.5px #f3eded;
+}
+
+
+/* ================================================= */
+/* TABLET / KLEINERE LAPTOPS */
+/* ================================================= */
+
+@media (max-width: 1200px) {
+
+  .werbung {
+    display: none;
+  }
+
+  h1 {
+    margin-left: 10%;
+    margin-right: 10%;
+
+    text-align: center;
+  }
+
+  h2 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .suchfeld {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  #cards {
+    width: 70%;
+  }
+}
+
+
+/* ================================================= */
+/* HANDY */
+/* ================================================= */
+
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 1.6rem;
+
+    margin: 30px 20px;
+
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+
+    margin: 20px;
+  }
+
+  .suchfeld {
+    font-size: 1.2rem;
+
+    margin: 40px 20px;
+  }
+
+  input[type="search"] {
+    font-size: 0.9rem;
+
+    padding: 8px;
+
+    border-width: 3px;
+  }
+
+  #cards {
+    width: auto;
+
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .card {
+    margin-top: 30px;
+  }
+
+  .card-bild {
+    height: 300px;
+  }
+
+  .card-bild img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .card-info {
+    padding: 15px;
+  }
+
+  .card-info h2 {
+    font-size: 2rem;
+  }
+
+  .error {
+    font-size: 1.2rem;
+
+    margin: 50px 20px;
+  }
 }
