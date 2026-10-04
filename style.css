@@ -12,11 +12,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-
-/* -------------------- */
-/* WERBUNG */
-/* -------------------- */
-
 .werbung-links {
   left: 25px;
 }
@@ -36,11 +31,6 @@ body {
 
   z-index: 10;
 }
-
-
-/* -------------------- */
-/* ÜBERSCHRIFTEN */
-/* -------------------- */
 
 h1 {
   color: #921212;
@@ -62,11 +52,6 @@ h2 {
   margin-top: 2.5%;
   margin-left: 20%;
 }
-
-
-/* -------------------- */
-/* SUCHFELD */
-/* -------------------- */
 
 .suchfeld {
   color: #921212;
@@ -90,11 +75,6 @@ input[type="search"] {
 
   background-color: #5a5959;
 }
-
-
-/* -------------------- */
-/* ERGEBNISKARTEN */
-/* -------------------- */
 
 #cards {
   width: 50%;
@@ -152,11 +132,6 @@ input[type="search"] {
   margin: 8px 0;
 }
 
-
-/* -------------------- */
-/* FEHLERMELDUNG */
-/* -------------------- */
-
 .error {
   color: #921212;
   font-family: "Super Waffles", sans-serif;
@@ -168,11 +143,6 @@ input[type="search"] {
 
   -webkit-text-stroke: 0.5px #f3eded;
 }
-
-
-/* ================================================= */
-/* TABLET / KLEINERE LAPTOPS */
-/* ================================================= */
 
 @media (max-width: 1200px) {
 
@@ -201,11 +171,6 @@ input[type="search"] {
     width: 70%;
   }
 }
-
-
-/* ================================================= */
-/* HANDY */
-/* ================================================= */
 
 @media (max-width: 600px) {
 
