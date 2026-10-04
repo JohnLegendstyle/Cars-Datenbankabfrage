@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Super Waffles";
+  src: url("./font/Super_Waffles.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #292b2a;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.werbung-links {
+  left: 25px;
+}
+.werbung-rechts {
+  right: 25px;
+}
+
+.werbung {
+  position: fixed;
+  top: 80px;
+
+  width: 250px;
+  height: 600px;
+
+  object-fit: fill;
+
+  z-index: 10;
+}
+
+h1 {
+  color: #921212;
+  font-family: "Super Waffles", sans-serif;
+  font-size: 2rem;
+  -webkit-text-stroke: 1px #f3eded;
+  margin-top: 2.5%;
+  margin-left: 35%;
+}
+
+h2 {
+  color: #921212;
+  font-family: "Super Waffles", sans-serif;
+  font-size: 4rem;
+  -webkit-text-stroke: 1px #f3eded;
+  margin-top: 2.5%;
+  margin-left: 20%;
+}
+
+.suchfeld {
+  color: #921212;
+  font-family: "Super Waffles", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+input[type="search"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 5px solid #921212;
+  border-radius: 20px;
+  background-color: #5a5959;
+}
+
+.card {
+  background-color: #5a5959;
+  border: 5px solid #921212;
+  border-radius: 20px;
+  overflow: hidden;
+
+  margin-top: 5%;
+  margin-bottom: 30px;
+  margin-right: 25%;
+
+  width: 100%;
+}
+
+.card-bild {
+  width: 90%;
+  max-width: 90%;
+  height: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  color: #921212;
+  font-family: "Super Waffles", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 10%;
+  margin-left: 25%;
+  -webkit-text-stroke: 0.5px #f3eded;
+
+}
+
+.card-bild img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.card-info {
+  padding: 25px 30px;
+  background-color: #444;
+  color: white;
+}
+
+.card-info h2 {
+  margin-top: 0;
+
+  color: #921212;
+  font-family: "Super Waffles", sans-serif;
+
+  -webkit-text-stroke: 0.5px #f3eded;
+}
+
+.card-info p {
+  margin: 8px 0;
+}
