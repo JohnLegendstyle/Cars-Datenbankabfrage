@@ -236,3 +236,20 @@ input[type="search"] {
     margin: 50px 20px;
   }
 }
+
+.suchfeld button{
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px 25px;
+
+  background-color: #921212;
+  color: white;
+
+  border: none;
+  border-radius: 15px;
+
+  font-family: "Super Waffles", sans-serif;
+  font-size: 1rem;
+
+  cursor: pointer;
+}
