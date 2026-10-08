@@ -68,6 +68,9 @@ if ($suche !== ""){
 
 
     <div id="cards">
+        <pre>
+          <?php print_r($autos); ?>
+        </pre>
 
       <?php foreach ($autos as $auto): ?>
 
