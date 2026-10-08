@@ -20,6 +20,6 @@ try{
     );
 } catch (PDOException $e) {
 
-    die("Datenbankverarbeitung fehlgeschlagen");
+    die("Datenbankfehler: " . $e->getMessage());
 
 }
