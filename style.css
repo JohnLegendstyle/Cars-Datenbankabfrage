@@ -145,11 +145,6 @@ input[type="search"] {
 }
 
 @media (max-width: 1200px) {
-
-  .werbung {
-    display: none;
-  }
-
   h1 {
     margin-left: 10%;
     margin-right: 10%;
@@ -169,6 +164,12 @@ input[type="search"] {
 
   #cards {
     width: 70%;
+  }
+}
+
+@media (max-width: 900px) {
+   .werbung {
+    display: none;
   }
 }
 
