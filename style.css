@@ -254,22 +254,3 @@ input[type="search"] {
 
   cursor: pointer;
 }
-
-.werbung {
-  display: block !important;
-  position: fixed !important;
-  top: 80px !important;
-
-  width: 250px !important;
-  height: 600px !important;
-
-  z-index: 9999 !important;
-}
-
-.werbung-links {
-  left: 25px !important;
-}
-
-.werbung-rechts {
-  right: 25px !important;
-}
