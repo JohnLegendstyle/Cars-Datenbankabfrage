@@ -9,9 +9,9 @@ if ($suche !== ""){
   $stmt = $pdo->prepare("
     SELECT *
     FROM autos
-    WHERE charakter LIKE :suche
-    OR farbe LIKE :suche
-    OR fahrzeug LIKE :suche
+    WHERE LOWER(charakter) LIKE LOWER(:suche)
+    OR LOWER(farbe) LIKE LOWER(:suche)
+    OR LOWER(fahrzeug) LIKE LOWER(:suche)
     ORDER BY charakter ASC
   ");
 
